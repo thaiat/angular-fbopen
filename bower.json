@@ -1,0 +1,21 @@
+{
+	"name": "angular-fbopen",
+	"version": "1.0.0",
+	"main": "angular-fbopen.js",
+	"ignore": [
+		"source",
+		"spec",
+		".bowerrc",
+		".gitignore",
+		".jshintignore",
+		".jshintrc",
+		"bower.json",
+		"gulpfile.js",
+		"gruntfile.js",
+		"package.json",
+		"README.md"
+	],
+	"dependencies": {
+		"angular": ">=1.2.16"
+	}
+}
