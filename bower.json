@@ -1,6 +1,6 @@
 {
 	"name": "angular-fbopen",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"main": "angular-fbopen.js",
 	"authors": ["Avi Haiat <thaiat@ipelia.com>"],
 	"license": "MIT",
