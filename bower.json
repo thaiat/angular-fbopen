@@ -2,6 +2,8 @@
 	"name": "angular-fbopen",
 	"version": "1.0.0",
 	"main": "angular-fbopen.js",
+	"authors": ["Avi Haiat <thaiat@ipelia.com>"],
+	"license": "MIT",
 	"ignore": [
 		"source",
 		"spec",
@@ -13,7 +15,7 @@
 		"gulpfile.js",
 		"gruntfile.js",
 		"package.json",
-		"README.md"
+		"readme.md"
 	],
 	"dependencies": {
 		"angular": ">=1.2.16"
