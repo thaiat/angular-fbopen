@@ -159,9 +159,9 @@ angular.module('openfb', [])
 	 */
 	function revokePermissions() {
 		return api({
-			method: 'DELETE',
-			path: '/me/permissions'
-		})
+				method: 'DELETE',
+				path: '/me/permissions'
+			})
 			.success(function () {
 				console.log('Permissions revoked');
 			});
@@ -182,10 +182,10 @@ angular.module('openfb', [])
 		params['access_token'] = tokenStore['fbtoken'];
 
 		return $http({
-			method: method,
-			url: 'https://graph.facebook.com' + obj.path,
-			params: params
-		})
+				method: method,
+				url: 'https://graph.facebook.com' + obj.path,
+				params: params
+			})
 			.error(function (data, status, headers, config) {
 				if (data.error && data.error.type === 'OAuthException') {
 					$rootScope.$emit('OAuthException');
@@ -248,7 +248,7 @@ angular.module('openfb', [])
 // Global function called back by the OAuth login dialog
 function oauthCallback(url) {
 
-	var injector = angular.element(document.getElementById('main')).injector();
+	var injector = angular.element(document.getElementsByTagName('body')[0]).injector();
 	injector.invoke(function (OpenFB) {
 		OpenFB.oauthCallback(url);
 	});
